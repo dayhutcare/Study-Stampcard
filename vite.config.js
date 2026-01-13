@@ -3,14 +3,27 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/your-repo-name/',  // Replace 'your-repo-name' with your actual GitHub repo name
+  base: '/Study-Stampcard/',
 })
 ```
 
-**Step 2: Create GitHub Actions Workflow**
+5. Click "Commit changes"
 
-Create this folder structure in your repo:
+---
+
+### Fix 2: Check the error details (to see if there are other issues)
+
+1. Go to the **Actions** tab in your repo
+2. Click on the failed workflow (the one with red X)
+3. Click on the job that failed
+4. **Take a screenshot of the error message** and share it here
+
+This will help me see if there are any other issues we need to fix.
+
+---
+
+### After fixing `vite.config.js`:
+
+The workflow should automatically run again. Once it completes successfully (green checkmark), your site will be live at:
 ```
-.github/
-  workflows/
-    deploy.yml
+https://dayhutcare.github.io/Study-Stampcard/
